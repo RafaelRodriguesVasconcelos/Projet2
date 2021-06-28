@@ -4,22 +4,25 @@
     <!-- En-tête de la page -->
     <meta charset="UTF-8">
     <title>Reservia</title>
-    <script src="https://kit.fontawesome.com/ba7b302cfb.js" crossorigin="anonymous"></script>
+    <link href="FontAwesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="preconnect" href="https://fonts.goog(leapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
 </head>
 <body>
 <!--dans l'en-tête:logo+navigation-->
-<main class="corp">
-    <header class="en-tete">
-        <img src="images/logo/Reservia@3x.png" alt="logo reservia">
+    <header class="header">
+        <img src="images/logo/Reservia.svg" alt="logo reservia">
         <nav>
             <ul>
-                <li><a href="#Fonction1"> Hébergements</a></li>
-                <li><a href="#Fonction2"> Activités</a></li>
-                <li><a href="#"> S'inscrire</a></li>
+                <li><a href="#Tittle1" data-active="true"> Hébergements</a></li>
+                <li><a href="#Tittle2" data-active="false"> Activités</a></li>
+                <li id="Inscription"><a href="#"> S'inscrire</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    <section id="fonctionnalités">
         <!--dans l'en-tête:titre+paragraphe-->
         <header class="recherche">
             <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
@@ -27,7 +30,7 @@
         </header>
         <!--barre de recherches+titre+icones-->
         <form>
-            <span class="Icone_location">
+            <span class="Icone_localisation">
                 <i class="fas fa-map-marker-alt"></i>
             </span>
             <input type="search" placeholder="Marseille, France">
@@ -35,24 +38,21 @@
                 <span class="bouton de recherche">Rechercher</span> 
             </button>            
         </form>
-            <div class="filtres">
+            <div id="filtres">
                 <h2>Filtres</h2>  
                     <div><i class="fas fa-money-bill-wave"></i> Économique</div>
                     <div><i class="fas fa-child"></i> Familial</div>
                     <div><i class="fas fa-heart"></i> Romantique</div>
                     <div><i class="fas fa-dog"></i> Animaux autorisés</div>   
             </div>
-            <div class="resultats">
-                <div class="info">
-                    <i class="fas fa-info"></i>
-                </div>
-                <p class="resultats_recherche">Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="resultats">   
+                <p> <span class="icone"><i class="fas fa-info"></i></span> <span class="test">Plus de 500 logements sont disponibles dans cette ville</span></p>
             </div>
 
     </section>
     <!--dans la section hébergement: 6 articles présentant chacun une photo avec son titre et un paragraphe descriptifs chaques photos est un lien cliquable-->
-<section>
-    <div class="encadrer1">
+<section id="Hebergements">
+    <div class="container-">
         <header>
             <h2 id="Fonction1">Hébergements à Marseille</h2>
         </header>
@@ -142,7 +142,7 @@
         </article>
         <a href="#">Afficher plus</a>
     </div>
-      <aside class="encadrer2">
+      <aside class="populaires">
         <!--dans la section aside les plus populaires: titre + 3 article composé d'une photo d'un titre et d'un paragraphe descriptif-->
         <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
         <article>
@@ -189,7 +189,7 @@
         </article>
       </aside>
 </section>
-<section class=encadrer3>
+<section class="activités">
     <!-- section activité: titre + liens des photos d'activités au nombre de 6 + leurs titres + paragraphe descriptif (les photos son des liens cliquables)-->
     <h2 id="Fonction2">Activités à Marseille</h2>
     <a id="activité1" href="#">   
@@ -217,8 +217,6 @@
                                 <h3>Parc Longchamp</h3>
     </a>
 </section>
-</main>
-
 <footer class="footer">
     <!--section footer info complémentaire : trois liste à puce-->
   <div class="propos">
@@ -229,7 +227,7 @@
                         <li><a href="#">Données et confidentialité</a></li>
                     </ul>
   </div>
-  <div class="hébergements">
+  <div class="nos_hebergements">
     <h3>Nos hébergements</h3>
                              <ul>
                                  <li><a href="#">Charte qualité</a></li>
