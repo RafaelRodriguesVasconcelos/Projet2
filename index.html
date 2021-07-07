@@ -50,15 +50,19 @@
             </div>
         </form>
     </section>
+
     <!--dans la section hébergement: 6 articles présentant chacun une photo avec son titre et un paragraphe descriptifs chaques photos est un lien cliquable-->
-    <section class="accommodation" id="accommodation">
-        <div class="container">
+
+    <section id="accommodation">
+        <div id=container_accomodation>
             <header>
                 <h2 id="Tittle1">Hébergements à Marseille</h2>
             </header>
-            <article>
+            <div class=organisation>
+            <article class=item_accomodation>
                 <a href="#">
-                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre avec un lit superposé et une fenêtre donnant vue sur la  ville.">
+                  <div class= description_accomodation>
+                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre avec un lit superposé et une fenêtre donnant vue sur la  ville.">  
                     <h3>Auberge la Cannebière</h3>
                     <p>Nuit à partir de 25€</p>
                     <ul>
@@ -68,10 +72,12 @@
                         <li><i data-active="true" class="fas fa-star"></i></li>
                         <li><i data-active="false" class="fas fa-star"></i></li>
                     </ul>
+                  </div>  
                 </a>    
             </article>
-            <article>
+            <article class=item_accomodation>
                 <a href="#">
+                  <div class= description_accomodation>
                     <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre grise avec deux lits simples et une fenêtre.">
                     <h3>Hôtel du port</h3>
                     <p>Nuit à partir de 52€</p>
@@ -82,10 +88,12 @@
                         <li><i data-active="true" class="fas fa-star"></i></li>
                         <li><i data-active="true" class="fas fa-star"></i></li>
                     </ul>
+                  </div>   
                 </a>
             </article>
-            <article>
+            <article class=item_accomodation>
                 <a href="#">
+                  <div class= description_accomodation>
                     <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre avec lit double, armoire et fenêtre.">
                     <h3>Hôtel Les mouettes</h3>
                     <p>Nuit à partir de 76€</p>
@@ -96,10 +104,14 @@
                         <li><i data-active="true" class="fas fa-star"></i></li>
                         <li><i data-active="false" class="fas fa-star"></i></li>
                     </ul>  
+                  </div>
                 </a>
             </article>
-            <article>
+            </div>
+            <div class=organisation>
+            <article class=item_accomodation>
                 <a href="#">
+                  <div class= description_accomodation>
                     <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre avec lit double sur les tons de mer.">
                     <h3>Hôtel de la mer</h3>
                     <p>Nuit à partir de 46€</p>
@@ -110,10 +122,12 @@
                         <li><i data-active="false" class="fas fa-star"></i></li>
                         <li><i data-active="false" class="fas fa-star"></i></li>
                     </ul>
+                  </div>
                 </a>
             </article>
-            <article>
+            <article class=item_accomodation>
                 <a href="#">
+                  <div class= description_accomodation>
                     <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre éclairée avec lit double et grande fenêtre.">
                     <h3>Auberge Le Panier</h3>
                     <p>Nuit à partir de 23€</p>
@@ -124,10 +138,12 @@
                         <li><i data-active="true" class="fas fa-star"></i></li>
                         <li><i data-active="false" class="fas fa-star"></i></li>
                     </ul>
+                  </div>
                 </a>
             </article>
-            <article>
+            <article class=item_accomodation>
                 <a href="#">
+                  <div class= description_accomodation>
                     <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre éclairée avec lit double et grande fenêtre.">
                     <h3>Hôtel chez Amina</h3>
                     <p>Nuit à partir de 96€</p>
@@ -138,14 +154,16 @@
                         <li><i data-active="true" class="fas fa-star"></i></li>
                         <li><i data-active="true" class="fas fa-star"></i></li>
                     </ul>
+                  </div>
                 </a>
             </article>
+            </div>
             <a href="#">Afficher plus</a>
         </div>
 
          <!--dans la section aside les plus populaires: titre + 3 article composé d'une photo d'un titre et d'un paragraphe descriptif-->
 
-        <aside class="populaires">
+        <aside id="container_popular">
             <h2>Les plus populaires<i class="fas fa-chart-line"></i></h2>
             <article>
                 <a href="#">

@@ -5,7 +5,7 @@ html {
     font-family: 'Raleway', sans-serif;
     max-width: 1440px;
     margin: auto;
-    padding: 0 2em;
+    padding: 0 3rem;
     box-sizing: border-box;
     border: 3px black solid;
 }
@@ -35,15 +35,14 @@ a
 
 .header 
 {
-    margin: 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
 }
 
 .header img
-{
-        margin: 1rem;
-        padding: 1rem;
+{       
+        padding-bottom: 1rem;
         padding-top: 2rem;
 }
 
@@ -229,31 +228,97 @@ a
         margin-left: 1rem;
 }
 
+/* Section hébergement */
+
+#accommodation
+{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-around;
+}
+
+#container_accomodation
+{
+        flex: 2;
+        background-color: #f2f2f2;
+        height: 40,625rem;
+        margin-right: 1.25rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+}
+
+#container_popular
+{
+        flex: 1;
+        background-color: #f2f2f2;
+        height: 40,625rem;
+        margin-left: 1.25rem;
+        border-radius: 10px;
+}
+
+.item_accomodation
+{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 10px;
+    
+}
+.item_accomodation img
+{
+        height: 7.5rem;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-top: 0.5rem;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+}
+
+.description_accomodation
+{
+        width: 12.5rem;
+        height: 10rem;
+ 
+        
+}
+
+.organisation
+{
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+}
+
+.description_accomodation ul
+{
+        list-style: none;
+        display: inline-flex;      
+}
+
+.item_accomodation ul [data-active="true"]
+{
+        color: #0065FC;
+}
+
+.item_accomodation ul [data-active="false"]
+{
+        color:#f2f2f2;
+}
+
 /* Mode reponsive */
+
+
 @media all and (max-device-width: 480px){
     .test {
         display: none;
     }
 }
 /* Fin mode responsive */
-
-      /*&:last-child
-        margin-right: 0
-      &:hover
-        background-color: #f3f8ff
-        transform: scale(1.015)
-      &Wrapicon
-        background-color: $lightBlue
-        border-radius: 100%
-        height: 3rem
-        width: 3rem
-        min-height: 3.5rem
-        min-width: 3.5rem
-        display: flex
-        align-items: center
-        justify-content: center
-        margin: -2px
-        &Icon
-          color: blue
-      &Title
-        margin: 0 1rem*/
