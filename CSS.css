@@ -230,88 +230,89 @@ a
 
 /* Section hébergement */
 
-#accommodation
+.accommodation
 {
         margin-top: 2rem;
         display: flex;
         justify-content: space-around;
 }
 
-#container_accomodation
+.container_accomodation
 {
         flex: 2;
         background-color: #f2f2f2;
         height: 40,625rem;
         margin-right: 1.25rem;
+        padding-top: 2rem;
+        padding-left: 1.5rem;
         border-radius: 10px;
-        display: flex;
-        flex-direction: column;
 }
 
-#container_popular
+
+.container_popular
 {
         flex: 1;
         background-color: #f2f2f2;
         height: 40,625rem;
         margin-left: 1.25rem;
         border-radius: 10px;
+        display: flex;
+        flex-direction: column;
 }
 
 .item_accomodation
 {
         display:flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
         background-color: white;
         border-radius: 10px;
-    
+        height: 10rem;
+        width: 30%;
 }
-.item_accomodation img
+
+.accomodation_title
+{
+        width: auto;
+        
+}
+
+.container-images
+{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+} 
+
+.img_accomodation img
 {
         height: 7.5rem;
-        width: 100%;
+        width: 100%%;
         border-radius: 15px 15px 0 0;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         margin-top: 0.5rem;
         background-size: cover;
         background-position: center;
-        display: flex;
-        justify-content: center;
 }
 
-.description_accomodation
+.star
 {
-        width: 12.5rem;
-        height: 10rem;
- 
-        
+        display: inline-flex;
 }
-
-.organisation
-{
-        margin-top: 0.5rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-
-}
-
-.description_accomodation ul
-{
-        list-style: none;
-        display: inline-flex;      
-}
-
-.item_accomodation ul [data-active="true"]
+.star [data-active="true"]
 {
         color: #0065FC;
 }
 
-.item_accomodation ul [data-active="false"]
+.star [data-active="false"]
 {
         color:#f2f2f2;
 }
+
+
 
 /* Mode reponsive */
 
