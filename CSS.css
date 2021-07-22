@@ -400,10 +400,11 @@ a
 {
         max-width: 1440px;
         display: flex;
+        justify-content: space-around;
 }
 .container_picture
 {
-        width: 25%;
+        width: 22%;
         height: 30rem;
         background-color: white;
         border-color: 0.125rem #f2f2f2 solid;
@@ -413,17 +414,17 @@ a
 {
         width: 100%;
         height: 100%;
-        background-size: cover;
-        background-position: center;
+        object-fit: cover;
         border-radius: 10px 10px 0 0;
 }
-
+.little_pîcture
+{
+   
+}
 .little_pîcture img
 {
-        width: 100%;
-        height: 50%;
-        background-size: cover;
-        background-position: center;
+        width: 80%;
+        object-fit: cover;
         border-radius: 10px 10px 0 0;
 }
 
