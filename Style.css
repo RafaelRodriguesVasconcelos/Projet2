@@ -528,13 +528,120 @@ a
         margin-left: 9rem;
 }
 
-/* Mode reponsive */
-
-
-@media all and (max-device-width: 480px){
-    .test {
-        display: none;
-    }
+.margin_container_footer3
+{
+        margin-bottom: 3rem;
 }
-/* Fin mode responsive */
-tify
+
+/* Mode reponsive */
+    
+@media all and (max-width: 1024px)
+{
+/*accomodation*/
+
+   .accommodation
+   {
+           width: auto;
+           height: auto;
+           display: flex;
+           flex-direction: column-reverse;
+           text-align: center;
+           margin:0
+   }
+
+   .container_accomodation
+   {
+           background-color: white;
+           margin:0;
+           padding: 0;
+           width: auto;
+           height: auto;
+           display: flex;
+           flex-wrap: nowrap;
+           flex-direction: column;
+           text-align: center;
+   }
+
+   .container-photo
+   {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 14%);
+        border-radius: 10px 10px 10px 10px;
+   }
+
+   
+
+   .container-images
+   {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+   }
+
+   .display_accomodation
+   {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        text-align: center;
+   }
+/*activity*/
+
+.container_activity
+   {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+   }
+
+.article_responsive
+   {
+
+   }
+.article_responsive a
+   {
+        display: block;
+        width: auto;
+        height: 10rem;
+        margin-bottom: 3rem;
+   }
+
+.article_responsive img
+   {
+        width: 100%;
+        height: 10rem;
+   }
+
+/*footer*/
+
+   .footer
+   {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+   }
+
+   .margin_container_footer1
+   {
+        margin-left:2rem;
+   }
+
+   .margin_container_footer2
+   {
+        margin-left: 2rem;
+   }
+
+}
+    
