@@ -35,13 +35,17 @@ a
 {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
 }
 
 .header img
 {       
         padding-bottom: 1rem;
         padding-top: 2rem;
+}
+
+.responsive_nav
+{
+        display: inline-flex;
 }
 
 .header nav 
@@ -53,6 +57,7 @@ a
         align-items: center;
         align-content: space-around;
         flex-wrap: wrap;
+
 }
 
 .header nav a 
@@ -93,7 +98,7 @@ a
         display:flex;
         justify-content: center;
         align-items: center;
-        width: 26.625rem;
+        width: 30rem;
         border-radius: 0.625rem;
         border: 0.5px #f2f2f2 solid;
 }
@@ -138,8 +143,7 @@ a
 
 /* filtres */
 
-
-#filter
+.filter
 {
         margin-top: 3.125rem;
         margin-bottom: 2.5rem;
@@ -147,7 +151,7 @@ a
         align-items: center;
 }
 
-#title_filter
+.title_filter
 {
         margin-right: 1.25rem;
 }
@@ -218,12 +222,20 @@ a
         border-radius: 25px;
 }
 
-#result_search
+.result_search
 {
         display: flex;
         align-items: center;
         height: 2rem;
         margin-left: 1rem;
+}
+
+.responsive_icons
+{
+        height: 100%;
+        width: 100%;
+        display: flex;
+
 }
 
 /* Section accomodation and popular */
@@ -242,8 +254,8 @@ a
         height: 45rem;
         margin-right: 1.25rem;
         padding-top: 2rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         border-radius: 10px;
 }
 
@@ -276,7 +288,6 @@ a
         display:flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        justify-content: center;
         background-color: white;
         border-radius: 10px;
         height: 13rem;
@@ -535,22 +546,108 @@ a
 
 /* Mode reponsive */
     
-@media all and (max-width: 1024px)
+@media all and (max-width: 768px)
 {
+
+/*navigation, filter*/
+
+.header nav
+{
+        width: auto;
+        height: auto;
+}
+.title_filter
+{
+        height: 10rem;
+        margin-right: 2rem;
+        display: flex;
+        justify-content: flex-start;
+}
+
+.responsive_icons
+{       
+        height: 10rem;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+}
+
+.result
+{
+        margin-bottom: 2rem;
+}
+
 /*accomodation*/
 
-   .accommodation
-   {
+.container_popular
+{
+        flex: auto;
+        height: 56rem;
+        margin-left: 0;
+}
+
+.container-photo2
+{
+        height: 14rem;
+}
+
+.article
+{
+        height: auto;
+        width: 100%;
+}
+
+.img_accomodation2
+{
+        height: 13rem;
+        width: 40%
+
+}
+
+.img_accomodation2 img
+{
+        height: 100%;
+        width: 100%;
+        margin-right: 0;
+}
+
+.text_accomodation
+{
+        height: auto;
+        width: 60%;
+        margin-right: 0;
+        display: flex;
+        justify-content: stretch;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+}
+
+.margin_texth3
+{
+        margin-left: 1rem;
+}
+
+.margin_textp
+{
+        margin-left: 1rem;
+        margin-bottom: 5rem;
+}
+
+.accommodation
+{
            width: auto;
            height: auto;
            display: flex;
            flex-direction: column-reverse;
-           text-align: center;
            margin:0
-   }
+}
 
-   .container_accomodation
-   {
+.container_accomodation
+{
            background-color: white;
            margin:0;
            padding: 0;
@@ -559,69 +656,94 @@ a
            display: flex;
            flex-wrap: nowrap;
            flex-direction: column;
-           text-align: center;
-   }
+}
 
-   .container-photo
-   {
+.container-photo
+{
         width: auto;
-        height: auto;
+        height: 21rem;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-        text-align: center;
         box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 14%);
         border-radius: 10px 10px 10px 10px;
-   }
+}
+
+.img_accomodation img
+{
+        height: 15rem;
+}
+
+.difference
+{
+        margin-left: 1rem;
+}
+
+.difference2
+{
+        margin-left: 1rem;      
+}
+
+.star
+{
+        margin-left: 1rem;
+}
+
 
    
 
-   .container-images
-   {
+.container-images
+{
         width: auto;
         height: auto;
         display: flex;
         flex-direction: column;
-        text-align: center;
-   }
+}
 
-   .display_accomodation
-   {
+.display_accomodation
+{
         width: auto;
         height: auto;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        text-align: center;
-   }
+        margin-top: 3rem;
+}
+
 /*activity*/
 
+.activity
+{
+        width: 100%;
+        height:100rem;
+        display: block;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
 .container_activity
-   {
-        width: auto;
-        height: auto;
+{
+        width: 100%;
+        height: 80rem;
         display: flex;
         flex-direction: column;
-        text-align: center;
-   }
+}
 
-.article_responsive
-   {
-
-   }
-.article_responsive a
-   {
-        display: block;
-        width: auto;
-        height: 10rem;
-        margin-bottom: 3rem;
-   }
-
-.article_responsive img
-   {
+.container_picture
+{
         width: 100%;
-        height: 10rem;
-   }
+        height: 80rem;;
+}
+
+
+.link_effect_big img
+{
+        width: 100%;
+        height: 15rem;
+}
+
+.link_effect_little img
+{
+        width: 100%;
+        height: 15rem;
+}
 
 /*footer*/
 
@@ -645,3 +767,72 @@ a
 
 }
     
+@media all and (max-width: 375px)
+{
+
+html
+{
+        padding:0;
+        display: flex;
+        max-width: 375px;
+}
+
+header
+{
+        max-width: 375px;
+}
+
+section
+{
+        max-width: 375px;
+}
+
+footer
+{
+        max-width: 375 px;
+}
+
+form
+{
+        max-width: 375px;
+}
+
+/*navigation, filter*/
+
+.filter
+{
+        display:none;
+}
+
+.barre
+{
+        display:none;
+}
+.header
+{
+        
+        display: flex;
+        flex-wrap: wrap;
+}
+
+#inscription
+{
+        padding:0;
+        margin: 0;
+}
+
+.header ul
+{
+        display: flex;
+        flex-direction: column-reverse;
+}
+.responsive_nav
+{
+        display: flex;
+        justify-content: start;
+}
+
+
+/*accomodation*/
+/*activity-/
+}

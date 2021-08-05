@@ -17,8 +17,8 @@
         <img src="images/logo/Reservia.svg" alt="logo reservia">
         <nav>
             <ul>
-                <li><a href="#Tittle1" data-active="true"> Hébergements</a></li>
-                <li><a href="#Tittle2" data-active="false"> Activités</a></li>
+                <div class="responsive_nav"><li><a href="#Tittle1" data-active="true"> Hébergements</a></li>
+                <li><a href="#Tittle2" data-active="false"> Activités</a></li></div>
                 <li id="Inscription"><a href="#"> S'inscrire</a></li>
             </ul>
         </nav>
@@ -37,16 +37,18 @@
                 <span><input class="input" type="search" placeholder="Marseille, France"></span>
                 <span><span class="button">Rechercher</span></span> 
             </div>
-            <div id="filter">
-                <div id="title_filter"><h2>Filtres</h2></div> 
+            <div class="filter">
+                <div class="title_filter"><h2>Filtres</h2></div> 
+                <div class="responsive_icons">
                 <div class="icons_text"><i class="fas fa-money-bill-wave icons_filter fa-lg"></i> <span class="text_filter">Économique</span></div>
                 <div class="icons_text"><i class="fas fa-child icons_filter fa-lg"></i> <span class="text_filter">Familial</span></div>
                 <div class="icons_text"><i class="fas fa-heart icons_filter fa-lg"></i> <span class="text_filter">Romantique</span></div>
                 <div class="icons_text"><i class="fas fa-dog icons_filter fa-lg"></i> <span class="text_filter">Animaux autorisés</span></div>  
+                </div>
             </div>
             <div class="result">   
                 <div><i class="fas fa-info icone_result"></i></div> 
-                <p id="result_search">Plus de 500 logements sont disponibles dans cette ville</p>
+                <p class="result_search">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </form>
     </section>
@@ -241,37 +243,37 @@
 
 <!-- section activité: titre + liens des photos d'activités au nombre de 6 + leurs titres + paragraphe descriptif (les photos son des liens cliquables)-->
 
-<section>
-    <h2 class="activity_tittle">Activités à Marseille</h2>
+<section class=activity>
+    <h2 id="Tittle2" class="activity_tittle">Activités à Marseille</h2>
     <div class="container_activity">
         <div class="container_picture big_picture" >
-            <a class="link_effect_big article_responsive" href="#">   
+            <a class="link_effect_big" href="#">   
                             <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="reno-laithienne">
                             <h3>Vieux Port</h3>
             </a>
         </div>
         <div class="container_picture little_pîcture">
-            <a class="link_effect_little article_responsive" href="#">
+            <a class="link_effect_little" href="#">
                                 <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="paul-hermann">
                                 <h3>Fort de Pomègues</h3>
             </a>
-            <a class="link_effect_little article_responsive" href="#">
+            <a class="link_effect_little" href="#">
                                 <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="kevin-hikari">
                                 <h3>Ile du Frioul</h3>
             </a>
         </div>
         <div class="container_picture big_picture">    
-            <a class="link_effect_big article_responsive" href="#">
+            <a class="link_effect_big" href="#">
                                 <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="kilyan-sockalingum">
                                 <h3>Parc National des Calanques</h3>
             </a>
         </div>
         <div class="container_picture little_pîcture">   
-            <a class="link_effect_little article_responsive" href="#">
+            <a class="link_effect_little" href="#">
                                 <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="florian-wehde"> 
                                 <h3>Notre-Dame-de-la-Garde</h3>     
             </a>
-            <a class="link_effect_little article_responsive" href="#">
+            <a class="link_effect_little" href="#">
                                 <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="lena-paulin">
                                 <h3>Parc Longchamp</h3>
             </a>
