@@ -8,6 +8,12 @@ html {
     padding: 0 3rem;
 }
 
+img
+{
+        max-width: 100%;
+        height: auto;
+}
+
 body 
 {
     margin: 0px; 
@@ -77,12 +83,7 @@ a
 
 .barre
 {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        width: 30rem;
-        border-radius: 0.625rem;
-        border: 0.5px #f2f2f2 solid;
+        display: inline-flex;
 }
 
 .button
@@ -665,7 +666,6 @@ body {
         width: auto;
         height: auto;
         display: flex;
-        flex-wrap: nowrap;
         flex-direction: column;
         box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 14%);
         border-radius: 10px 10px 10px 10px;
@@ -697,7 +697,7 @@ body {
 
 .activity
 {
-        max-width: 768px;
+        max-width: 100%;
         height:auto;
         display: flex;
         flex-direction: column;
@@ -825,8 +825,12 @@ html
         display: flex;
         justify-content: start;
 }
-
-
+html
+{
+        display: block;
+        flex-direction: column;
+        max-width: 375px;
+}
 /*accomodation*/
 /*activity-/
 }
