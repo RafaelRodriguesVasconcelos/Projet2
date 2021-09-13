@@ -29,53 +29,63 @@ a
 /* CSS header */
 
 
-.logo {
-        width: 60vw;
+.logo 
+      {
+        width: 60%;
         max-width: 60rem;
       }
-      #nav-links {
+
+.nav-links 
+{
         display: flex;
         justify-content: space-between;
         width: auto;
-      }
-      #nav-links a {
+}
+
+.nav-links a 
+{
         text-decoration: none;
         font-weight: bold;
-        font-size: 1em;
+        font-size: 1rem;
         border-top: 3px solid #ffffff00;
-        outline: none;
-      }
-      #loc_nav a,
-      #act_nav a,
-      #register a {
+}
+
+.loc_nav a,
+.act_nav a,
+.register a 
+{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 15vh;
+        width: 15rem;
         text-align: center;
         height: 4rem;
-      }
-      #nav-links div {
+}
+
+.nav-links div 
+{
         display: flex;
         flex-direction: row;
         align-items: center;
-      }
+}
 
-      #loc_nav a:hover,
-      #act_nav a:hover,
-      #register a:hover {
+.loc_nav a:hover,
+.act_nav a:hover,
+.register a:hover 
+{
         border-top: 3px solid #0065fc;
         color: #0065fc;
         font-weight: bold;
-      }
+}
 
-      #loc_nav a:focus,
-      #act_nav a:focus,
-      #register a:focus {
+.loc_nav a:focus,
+.act_nav a:focus,
+.register a:focus 
+{
         border-top: 3px solid #0065fc;
         color: #0065fc;
         font-weight: bold;
-      }
+}
    
 
 /* barre de recherche */
@@ -541,40 +551,40 @@ body {
       .logo img {
         margin: auto;
       }
-      #nav-links a {
+      .nav-links a {
         border-bottom: 3px solid #ffffff00;
         border-top: none;
         width: 50vh;
         text-align: center;
       }
-      #loc_nav a:hover,
-      #act_nav a:hover,
-      #register a:hover {
+      .loc_nav a:hover,
+      .act_nav a:hover,
+      .register a:hover {
         border-top: none;
         border-bottom: 3px solid #0065fc;
         color: #0065fc;
         font-weight: bold;
       }
-      #loc_nava a:focus,
-      #act_nav a:focus,
-      #register a:focus {
+      .loc_nava a:focus,
+      .act_nav a:focus,
+      .register a:focus {
         border-top: none;
         border-bottom: 3px solid #0065fc;
         color: #0065fc;
         font-weight: bold;
       }
-      #nav-links {
+      .nav-links {
         flex-direction: row;
         flex-wrap: wrap;
         margin-bottom: 40px;
       }
-      #nav-links div:last-child {
+      .nav-links div:last-child {
         order: 2;
         width: 50%;
         display: flex;
         justify-content: center;
       }
-      #nav-links div:nth-of-type(2) {
+      .nav-links div:nth-of-type(2) {
         order: 3;
         display: flex;
         width: 50%;
@@ -582,7 +592,7 @@ body {
         justify-content: center;
         border-bottom: 1px solid #deebff;
       }
-      #nav-links div:nth-of-type(3) {
+      .nav-links div:nth-of-type(3) {
         order: 4;
         width: 50%;
         display: flex;
@@ -809,7 +819,7 @@ html
         flex-wrap: wrap;
 }
 
-#inscription
+.inscription
 {
         padding:0;
         margin: 0;
