@@ -394,7 +394,7 @@ a
 .display_accomodation
 {
         font-weight: bold;
-        font-size: 1.6rem;
+        font-size: 1rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
         margin-left: 2rem;
@@ -410,9 +410,9 @@ a
 
 /* section activity */
 
-.activity_tittle
+.activity_title
 {
-        margin-top: 5rem;
+        margin-top: 4rem;
         margin-bottom: 2rem;
 }
 
@@ -645,6 +645,17 @@ a
         justify-content: center;
         border-bottom: 1px solid #deebff;
         }
+        header
+        {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        }
+
+        form 
+        {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        }
 
         .icons_text
         {
@@ -784,7 +795,8 @@ a
         height: auto;
         display: flex;
         flex-direction: column;
-        align-content: center;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
         }
 
         .display_accomodation
@@ -800,6 +812,8 @@ a
         height:auto;
         display: flex;
         flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 2rem;
         }
 
         .container_activity
@@ -813,7 +827,7 @@ a
 
         .link_effect_little
         {
-        width: 30rem;
+        width: 100%;
         height: 100%;
         margin-top:2rem;
         margin-right: 1rem;
@@ -821,13 +835,11 @@ a
 
         .link_effect_big
         {
-        width: 30rem;
+        width: 100%;
         height: 100%;
         margin-top:2rem;
         display:flex;
         flex-direction:column;
-        margin-right: 1rem;
-
         }
 
         .little_pîcture
@@ -841,7 +853,6 @@ a
         width: 100%;
         height: 100%;
         display:flex;
-        align-items: center;
         }
 
         .container_picture h3
@@ -850,12 +861,6 @@ a
         margin-bottom: 1rem;
         display: flex;
         align-content: center;
-        }
-
-        .container_picture img
-        {
-        width: 100%;
-        height:
         }
 
         .footer
@@ -899,6 +904,11 @@ a
                 margin-bottom: 0.5rem;
         }
 
+        .activity_title
+        {
+                margin-top: 1rem;
+        }
+
         .container-photo
         {
                 width: auto;
@@ -935,5 +945,10 @@ a
         .img_accomodation img 
         {
                 height: 10rem;
+        }
+
+        .link_effect_big
+        {
+                display: flex;
         }
 }
